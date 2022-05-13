@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit"; 
+import { createSlice } from "@reduxjs/toolkit";
 
 const slice = createSlice({
   name: "auth",
@@ -23,4 +23,4 @@ const slice = createSlice({
 });
 
 export default slice.reducer;
-export const { signIn,signOut,createUser} = slice.actions
+export const { signIn, signOut, createUser } = slice.actions;
