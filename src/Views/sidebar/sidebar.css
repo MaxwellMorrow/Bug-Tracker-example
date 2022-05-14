@@ -5,6 +5,7 @@
     height: 100vh;
     background-color: var(--prime-color);
     text-align: center;
+    left: 0;
 
 }
 .sidebar li{
