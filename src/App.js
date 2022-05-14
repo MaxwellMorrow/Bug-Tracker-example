@@ -2,7 +2,9 @@ import "./App.css";
 import Login from "./Views/login/login";
 import { useSelector } from "react-redux";
 import { BrowserRouter as Router } from "react-router-dom";
+import {Switch , Route} from "react-router-dom"
 import Sidebar from "./Views/sidebar/sidebar";
+import ViewBugPage from "./Views/pages/viewBugs";
 
 function App() {
   const { auth } = useSelector((state) => state);
@@ -15,9 +17,14 @@ function App() {
         ) : (
           <>
             <Sidebar />
+            <Switch>
+              <Route path="/viewbugs">
+                <ViewBugPage />
+              </Route>
+            </Switch>
+        
           </>
         )}
-        {/* wrapping brackets allows us to make this conditional */}
       </div>
     </Router>
   );
